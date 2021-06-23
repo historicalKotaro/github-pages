@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <title>historicalKotaro's portfolio</title>
-    <script src="https://unpkg.com/vue@2.5.17"></script>
-    <head id='header'>{{txt}}</head>
-	<div id='app'>
-		{{ message }}
-	<div>
+    <body id ='app'>
+        <title>historicalKotaro's portfolio</title>
+        <script src="https://unpkg.com/vue@2.5.17"></script>
+        <header>{{txt}}</header>
+	    <div>
+		    {{ message }}
+	    <div>
+    </body>
 	<script>
 		console.assert(typeof Vue !== 'undefined');
-		new Vue({
+		var app=new Vue({
 			el: '#app',
 			data: {
-				message: 'こんにちは'
+				message: "Welcome to Kotaro's history!"
 			}
 		});
 
@@ -25,7 +27,7 @@
 	</script>
 
     <style>
-        head{font-size: 40px;}
+        header{font-size: 40px;}
 
 
 
