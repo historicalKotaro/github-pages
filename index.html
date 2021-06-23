@@ -1,38 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <body>
+    <head>
         <title>historicalKotaro's portfolio</title>
         <script src="https://unpkg.com/vue@2.5.17"></script>
-        <head>Kotaroの歴史</head>
+    </head>
+    <body>
+        <p id='app' class='top'>
+            {{ top }}
+        </p>
 	    <div id='app'> 
 		    {{ message }}
 	    <div>
     </body>
 	<script>
-        //component作成
-       // vue.component(
-         //   'header',{
-          //      'historicalKotaroの歴史'
-      //      }
-       // )
-
-        //vueインスタンス作成
-		console.assert(typeof Vue !== 'undefined');
-		new Vue({
+    	console.assert(typeof Vue !== 'undefined');
+		
+        new Vue({
 			el: '#app',
 			data: {
-				message: "Welcome to Kotaro's history!"
+				message: "Welcome to Kotaro's history!",
+                top: "Kotaroの歴史"
 			}
-		})
-
-        
-
-
-     
+		})   
 	</script>
 
     <style>
-        head{font-size: 40px;}
+        p.top{font-size: 40px;}
 
 
 
