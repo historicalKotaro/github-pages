@@ -3,12 +3,20 @@
     <body id ='app'>
         <title>historicalKotaro's portfolio</title>
         <script src="https://unpkg.com/vue@2.5.17"></script>
-        <header>{{ txt }}</header>
-	    <div>
+        <header></header>
+	    <div id='app'> 
 		    {{ message }}
 	    <div>
     </body>
 	<script>
+        //component作成
+        vue.component(
+            'header',{
+                'historicalKotaroの歴史'
+            }
+        );
+        
+        //vueインスタンス作成
 		console.assert(typeof Vue !== 'undefined');
 		new Vue({
 			el: '#app',
@@ -17,13 +25,10 @@
 			}
 		});
 
-        vue.component(
-            'header',{
-                txt: 'historicalKotaroの歴史'
-            }
+        
 
 
-        );
+     
 	</script>
 
     <style>
