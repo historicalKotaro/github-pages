@@ -3,14 +3,14 @@
     <body id ='app'>
         <title>historicalKotaro's portfolio</title>
         <script src="https://unpkg.com/vue@2.5.17"></script>
-        <header>{{txt}}</header>
+        <header>{{ txt }}</header>
 	    <div>
 		    {{ message }}
 	    <div>
     </body>
 	<script>
 		console.assert(typeof Vue !== 'undefined');
-		var app=new Vue({
+		new Vue({
 			el: '#app',
 			data: {
 				message: "Welcome to Kotaro's history!"
