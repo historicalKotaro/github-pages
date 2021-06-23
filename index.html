@@ -6,27 +6,22 @@
     </head>
     <body>
         <p class='top'>
-            Kotaroの歴史
+            Welcome to Kotaro's history!
         </p>
-	    <div id='app'> 
-		    {{ message }}
-	    <div>
+	    <h1> 
+            main contents
+	    <h1>
     </body>
+    
+
+    <!--          script               -->
 	<script>
-    	console.assert(typeof Vue !== 'undefined');
-		
-        new Vue({
-			el: '#app',
-			data: {
-				message: "Welcome to Kotaro's history!"
-			}
-		})   
 	</script>
-
+    <!--           css                 -->
     <style>
-        p.top{font-size: 40px;}
-
-
-
+        p.top{
+            font-size: 40px;
+            font-family: 'Times New Roman';
+        }
     </style>
 </html>
