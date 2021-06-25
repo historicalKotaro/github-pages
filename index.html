@@ -8,12 +8,18 @@
             Welcome to Kotaro's history!
         </header>
 
-        <div id="menu">
+        <div class="nav">
             <p>works</p>
             <p>history</p>
             <p>contact</p>
         </div>
 
+        <div id = "leftSide">        
+            <p>works</p>
+            <p>history</p>
+            <p>contact</p>
+            <p>bact to the top</p>
+        </div>
 	    <main> 
             main contents
         </main>
@@ -30,17 +36,33 @@
     <!--           css                 -->
     <style>
         body{
-            width: 420px;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
 
         header{ 
+            width: 480px;
             color: red;   
         }
-        div#menu{
-            width: 380px;
+        .nav p{
+            width: 480px;
+            height: 60px;
             margin:10px;
+            display: inline;
         }
+        div#leftSide{
+            width: 100px;
+            float: left;
+        }
+
+        main{
+            width: 380px;
+        }
+
+        footer{
+            width: 480px;
+            clear: both;
+        }
+
         
     </style>
 </html>
