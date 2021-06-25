@@ -2,15 +2,25 @@
 <html>
     <head>
         <title>historicalKotaro's portfolio</title>
-        <script src="https://unpkg.com/vue@2.5.17"></script>
     </head>
     <body>
-        <p class='top'>
+        <header>
             Welcome to Kotaro's history!
-        </p>
-	    <h1> 
+        </header>
+
+        <div id="menu">
+            <p>works</p>
+            <p>history</p>
+            <p>contact</p>
+        </div>
+
+	    <main> 
             main contents
-	    <h1>
+        </main>
+
+        <footer>
+            footer 
+        </footer>
     </body>
     
 
@@ -19,9 +29,18 @@
 	</script>
     <!--           css                 -->
     <style>
-        p.top{
-            font-size: 40px;
-            font-family: 'Times New Roman';
+        body{
+            width: 420px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
+
+        header{ 
+            color: red;   
+        }
+        div#menu{
+            width: 380px;
+            margin:10px;
+        }
+        
     </style>
 </html>
