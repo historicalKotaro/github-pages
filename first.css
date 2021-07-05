@@ -3,6 +3,7 @@ body{
 }
 
 header{ 
+    font-size: 40vm;
     width: 100%;
     color: red;   
 }
